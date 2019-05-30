@@ -13,7 +13,11 @@ def def3():
 
 if __name__ == '__main__':
     # 使用其他模块的方法 : 语法 模块名.方法名()
-    value = base_type.add(80, 80)
+                            # 指定参数入参, 指定num2 =100 ,指定num1 是 20
+    value = base_type.add(num2=100, num1=20)
+                            # 默认参数入参, 就是按照参数的顺序入参, 100 是num1, 20 是num2
+    value1 = base_type.add(100, 20)
+
     print(value)
 
     a = '凄凄切切风雨行'
