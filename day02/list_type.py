@@ -57,7 +57,7 @@ def list_order_by():
     # 从小到大排序
     qlist.sort()
     print(qlist)
-    # 从大到小排序
+    # 从大到小排序 # 指定参数入参: reverse=True
     qlist.sort(reverse=True)
     print(qlist)
 

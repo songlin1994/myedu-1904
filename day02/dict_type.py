@@ -42,7 +42,7 @@ def dict_zhuanhuan():
     print(str_dict)
     print(type(str_dict))
 
-    dict_str='{"username": "卡见风使舵", "password": "123456"}'
+    dict_str='{"username": "卡见风使舵","password": "123456"}'
     # json.loads(dict_str)  字符串 转换 成字典
     json_loads = json.loads(dict_str)
     print(type(json_loads))
