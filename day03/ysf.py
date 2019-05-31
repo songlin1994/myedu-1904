@@ -29,4 +29,5 @@ def deng(a):
     print(a)
 
 if __name__ == '__main__':
-    deng(9)
+    # deng(9)
+    jisuan(10,3)
