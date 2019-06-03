@@ -91,3 +91,6 @@ if __name__ == '__main__':
     # list_order_by()
     # list_distinct()
     home_work()
+    # qlist = [1, 2, 6, 4, 5]
+    # qlist.reverse()
+    # print(qlist)

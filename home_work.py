@@ -72,6 +72,41 @@ def jidan2():
             continue
         print(i)
 
+# 冒泡排序
+def paixu():
+    alist=[3,2,1,5,4,9,6,7,8]
+    # 外循环 len - 1 :  因为 两两比较 ,比如有10个数 我需要比较 9轮
+    # 内循环: len - i -1 : 因为 两两比较 ,比如有10个数 我需要比较 9次, 第二遍的时候 只需要比较 8次,
+    # 每一遍都少一次,因为每遍 都会放一个数在后面
+
+    #             if alist[j] <= alist[j+1]:
+    #                 continue                    判断相邻两个数 要不要换位置
+
+    #             temp = alist[j]
+    #             alist[j] = alist[j+1]     将相邻两个数 换位置
+    #             alist[j+1] = temp
+    for i in range(len(alist)-1):
+        for j in range(len(alist)-i-1):
+            if alist[j] <= alist[j+1]:
+                continue
+            temp = alist[j]
+            alist[j] = alist[j+1]
+            alist[j+1] = temp
+    print(alist)
+
+def distenct():
+    # list去重
+    alist = [3, 2, 1, 5, 4, 4,5]
+    blist= []
+    for i in alist:
+        if i not in blist:
+            blist.append(i)
+    print(blist)
+
+    # 去重方式 2
+    s = set(alist)
+    print(s)
+
 if __name__ == '__main__':
     # sum_demo()
     jiujiu()

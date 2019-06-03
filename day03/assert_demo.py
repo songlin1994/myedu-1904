@@ -19,4 +19,5 @@ def assert_str():
 
 if __name__ == '__main__':
     # assert_int()
-    assert_str()
+    # assert_str()
+    assert 3<2

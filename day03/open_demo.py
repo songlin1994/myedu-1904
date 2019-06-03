@@ -19,10 +19,12 @@ def open_read():
     text_io = open('test.text', 'r')
 
     # 读取所有行 ,返回一个list
-    # print(text_io.readlines())
+    print(text_io.readlines())
 
     # readline() 读取一行
     print(text_io.readline())
+    # print(text_io.readline())
+
 
 if __name__ == '__main__':
     # open_write1()
