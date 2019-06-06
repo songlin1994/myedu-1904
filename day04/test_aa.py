@@ -1,11 +1,17 @@
+# 导入需要用的模块
 import allure
 import pytest
 from day04 import read_excel
 
+# 调用一下方法 读取excel
 excel_list = read_excel.read_excel_list('./day04/test.xlsx')
+# 声明一个 list类型变量, 用来存用例名
 ids_list = []
+# 遍历 excel_list
 for i in range(len(excel_list)):
+    # 删除excel_list中每个小list的最后一个元素,并赋值给ids_pop
     ids_pop = excel_list[i].pop()
+    # 将ids_pop添加到 ids_list 里面
     ids_list.append(ids_pop)
 
 

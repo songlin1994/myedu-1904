@@ -32,7 +32,6 @@ def read_excel_list(file):
         d = []
         d = sheet1.row_values(i)
         l.append(d)
-
     return l
 
 

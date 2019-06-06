@@ -13,4 +13,7 @@ if __name__ == '__main__':
     except:
         print('报错了')
 
+        # 抛出异常
+        # raise
+
     print('123456')
