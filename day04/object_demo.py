@@ -47,6 +47,7 @@ if __name__ == '__main__':
     # girl.eat()
     # girl.sleep()
     # girl.info()
+    # print(girl.name)
 
 
     tester = Tester('咸鱼', 25, '男','资深测试工程师')

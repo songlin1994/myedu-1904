@@ -29,7 +29,6 @@ def read_excel_list(file):
 
     sheet1 = wb.sheet_by_index(0)  # 通过索引获取表格
     for i in range(1, sheet1.nrows):
-        d = []
         d = sheet1.row_values(i)
         l.append(d)
     return l

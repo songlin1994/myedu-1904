@@ -105,7 +105,17 @@ def distenct():
     s = set(alist)
     print(s)
 
+# list 转字典 , 索引作为key , 索引对应的值 作为 value
+def list2dict():
+    alist = [3, 2, 1, 5, 4, 4, 5]
+    adict={}
+    for i in range(len(alist)):
+        adict[i] = alist[i]
+
+    print(adict)
+
 if __name__ == '__main__':
     # sum_demo()
     jiujiu()
     # paixu()
+    # list2dict()

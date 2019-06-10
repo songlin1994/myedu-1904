@@ -39,11 +39,13 @@ def for_for():
     # end ='XXX' : 让print 以什么内容结尾
     # \n : 就是换行符
     # print 默认 以换行符结尾
+    # \(反斜杠) : 转义符
     for i in range(5):
         print('你好')
         for j in range(2):
             print('世界',end=',')
         print('\n')
+
 
 def break_continue():
 
