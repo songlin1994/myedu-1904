@@ -22,12 +22,12 @@ def deng(a):
     a-=1 # a = a-1  自减
     print(a)
 
-    a*=3
+    a*=3  # a = a*3
     print(a)
 
     a/=9
     print(a)
 
 if __name__ == '__main__':
-    # deng(9)
-    jisuan(10,3)
+    deng(9)
+    # jisuan(10,3)

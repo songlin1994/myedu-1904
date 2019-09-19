@@ -84,11 +84,11 @@ def paixu():
     #             alist[j] = alist[j+1]     将相邻两个数 换位置
     #             alist[j+1] = temp
     for i in range(len(alist)-1):
-        for j in range(len(alist)-i-1):
+        for j in range(len(alist)-1-i):
             if alist[j] > alist[j+1]:
-                temp = alist[j]
-                alist[j] = alist[j + 1]
-                alist[j + 1] = temp
+                temp = alist[j]  # 取出前一位的数字
+                alist[j] = alist[j + 1] # 让前一位等于后一位的数字
+                alist[j + 1] = temp # 再让后一位等于 原来前一位的数字
 
     print(alist)
 
@@ -105,17 +105,33 @@ def distenct():
     s = set(alist)
     print(s)
 
-# list 转字典 , 索引作为key , 索引对应的值 作为 value
+# list 转 字典 , 索引作为key , 索引对应的值 作为 value
 def list2dict():
     alist = [3, 2, 1, 5, 4, 4, 5]
     adict={}
     for i in range(len(alist)):
-        adict[i] = alist[i]
+        v = alist[i]
+        adict[i] = v
+
 
     print(adict)
 
+
+# 判断质数/素数
+def iszhishu(num):
+    for i in range(2,int(num/2)+1):
+        if num%i == 0:
+            return False
+    return True
+
+
+def suiji():
+    for i in range(6):
+        for j in range(6):
+            for k in range(5):
+                if i+j+k ==10 :
+                    print('篮球%s个,紫球%s个,绿球%s个'%(i,j,k))
+
 if __name__ == '__main__':
-    # sum_demo()
-    jiujiu()
-    # paixu()
-    # list2dict()
+    l = ['Aaa','bbb','cCc','DdDD','EeEEE']
+    print([i.upper() for i in l if len(i)<4])

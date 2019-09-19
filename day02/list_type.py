@@ -64,6 +64,7 @@ def list_order_by():
 def list_distinct():
     vlist = [1,2,2,6,6,4,5]
     # set(vlist) : 使用set 方法对 list进行去重,去重后不是list类型,用list() 方法 将这个数据转换成list类型
+    print(type(set(vlist)))
     vlist = list(set(vlist))
     print(vlist)
 
@@ -89,8 +90,9 @@ if __name__ == '__main__':
     # list_add()
     # list_update()
     # list_order_by()
-    # list_distinct()
-    home_work()
-    # qlist = [1, 2, 6, 4, 5]
+    list_distinct()
+    # home_work()
+    # qlist = [1,
+# 2, 6, 4, 5]
     # qlist.reverse()
     # print(qlist)

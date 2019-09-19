@@ -43,7 +43,7 @@ def for_for():
     for i in range(5):
         print('你好')
         for j in range(2):
-            print('世界',end=',')
+            print('世界',end='.')
         print('\n')
 
 
@@ -61,7 +61,8 @@ def break_continue():
 
 
 if __name__ == '__main__':
+    # for_demo1()
     # for_demo2()
     # for_list()
-    # for_for()
-    break_continue()
+    for_for()
+    # break_continue()

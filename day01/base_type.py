@@ -57,7 +57,7 @@ def add(num1,num2):
     print(num1+num2)
 
     # 方法执行到 return 就返回return后面的内容
-    return num1+num2
+    # return num1+num2
 
 
 # 这是一个main方法,可以直接执行,main方法下面不能再有其他方法
@@ -71,11 +71,16 @@ if __name__ == '__main__':
     # type_zhuanhuan1()
 
     # str_join() 没有返回值,所以 a 的值 就是 None
-    a = str_join()
+    # a = str_join()
 
     # add(5,30) 是有返回值的 , 所以 b 的值就是 35
-    b = add(5,30)
-    print('-----------')
-    print(a)
-    print(type(a))
-    print(b)
+    # b = add(5,30)
+    # print('-----------')
+    # # print(a)
+    # # print(type(a))
+    # print(b)
+    name='江术强'
+    age=18
+    print('我叫%s,今年%s岁'%(name,age))
+    print(name[0])
+    print(name[1:])

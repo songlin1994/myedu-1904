@@ -48,6 +48,19 @@ def dict_zhuanhuan():
     print(type(json_loads))
 
 # 题: 新建一个字典变量,里面有两个键值对,通过key访问一个值,删除一个键值对,添加一个键值对,更改任意一个值,再新建一个字典,将两个合并
+def hw():
+    adict = {'username': '亚索', "password": "123456"}
+    print(adict['username'])
+    adict.pop('username')
+    adict['age']=222
+    adict['age']=333
+    bdict ={"pwd":"77777",'class':'1904'}
+
+    adict.update(bdict)
+    print(adict)
+
+    d = dict(adict, **bdict)
+    print(d)
 
 if __name__ == '__main__':
     # dict_sel()

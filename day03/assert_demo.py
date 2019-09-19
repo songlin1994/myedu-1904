@@ -1,11 +1,13 @@
 
 def assert_int():
     try:
-        assert 3>2
+        assert 3<2
         assert 3==3
         assert 2<3
     except:
         print('断言失败了')
+
+    print(333)
 
 def assert_str():
     a = '成功'
@@ -18,6 +20,7 @@ def assert_str():
         print('断言失败了')
 
 if __name__ == '__main__':
-    # assert_int()
+    assert_int()
     # assert_str()
-    assert 3<2
+    # assert 3<2
+    # print('3333')

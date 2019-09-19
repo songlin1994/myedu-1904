@@ -42,9 +42,9 @@ class Tester(Human):
 if __name__ == '__main__':
     # 新建一个对象 , 根据 Human 类 新建对象
     # 对象是 类的 实例化
-    # girl = Human('田雨', 18, '女')
+    girl = Human('田雨', 18, '女')
     # 可以通过对象去调用类的方法和属性
-    # girl.eat()
+    girl.eat()
     # girl.sleep()
     # girl.info()
     # print(girl.name)
@@ -53,3 +53,4 @@ if __name__ == '__main__':
     tester = Tester('咸鱼', 25, '男','资深测试工程师')
     tester.do_test()
     tester.eat()
+    tester.sleep()

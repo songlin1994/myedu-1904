@@ -25,12 +25,11 @@ def read_excel_dict(file):
 def read_excel_list(file):
     l = []
     wb = xlrd.open_workbook(filename=file)  # 打开文件
-    # print(wb.sheet_names())  # 获取所有表格名字
 
-    sheet1 = wb.sheet_by_index(0)  # 通过索引获取表格
+    sheet1 = wb.sheet_by_index(0)  # 通过索引获取表格sheet页
     for i in range(1, sheet1.nrows):
-        d = sheet1.row_values(i)
-        l.append(d)
+        d = sheet1.row_values(i) # 通过行号获取内容
+        l.append(d)  # 添加行里面的内容
     return l
 
 

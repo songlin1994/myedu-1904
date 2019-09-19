@@ -8,7 +8,7 @@ if __name__ == '__main__':
     # 这个叫异常处理
     try:
         print('错误之前')
-        a=5/0
+        a=5/1
         print('错误之后')
     except:
         print('报错了')
